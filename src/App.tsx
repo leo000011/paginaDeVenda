@@ -10,16 +10,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./components/ui/carousel";
+import { AiTwotoneLike } from "react-icons/ai";
 
 function App() {
   return (
     <>
       <div className=" bg-[rgb(32,32,32)] text-white  flex justify-center">
         <div className=" space-y-5 max-md:space-y-3 text-center w-[1200px] px-4 py-4">
-          <h1 className="text-5xl max-md:text-xl font-Poppins font-bold  ">
+          <h1 className="text-5xl max-md:text-3xl font-Poppins font-bold  ">
             Descubra Como Garantir <br /> uma Renda Extra Diária
           </h1>
-          <h4 className=" my-3 font-Jost font-semibold  max-md:text-[9px]">
+          <h4 className=" my-3 font-Jost font-semibold  max-md:text-[12px]">
             Domine a Arte de Vender Online Mesmo Sem Experiência!
           </h4>
 
@@ -77,12 +78,12 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-[#d19f37] text-white p-5 text-center">
+      <div className="bg-[#d19f37] text-white p-10 text-center ">
         <div className=" space-y-5">
-          <h1 className="text-sm md:text-3xl font-Poppins font-semibold ">
+          <h1 className="text-2xl md:text-3xl font-Poppins font-bold ">
             O QUE É O METODO RENDA EXTRA ?
           </h1>
-          <p className="text-xs md:text-2xl font-Jost">
+          <p className="text-sm md:text-2xl font-Jost">
             Nosso método é 100% didático, permitindo que você aprenda todo o
             conteúdo usando apenas seu celular e comece a ganhar dinheiro de
             qualquer lugar, precisando apenas de uma conexão com a internet.
@@ -101,25 +102,77 @@ function App() {
 
       <div className="p-5 bg-white1 text-center  ">
         <div className="space-y-5 grid justify-center">
-          <h1 className="text-[#1fbd9a] text-xl md:text-4xl font-Poppins font-bold">
+          <h1 className="text-[#1fbd9a] text-4xl font-Poppins font-bold">
             Resultado
           </h1>
-          <div className="max-md:w-[200px] px-10">
+          <div className="max-md:w-[400px]  px-10">
             <Carousel>
-              <CarouselContent className="max-md:-ml-4" >
-                <CarouselItem className="max-md:pl-4 basis-1/3">
+              <CarouselContent className="-ml-4">
+                <CarouselItem className="max-md:pl-4 ">
                   <img src="/1.webp" alt="" />
                 </CarouselItem>
-                <CarouselItem className="max-md:pl-4 basis-1/3">
+                <CarouselItem className="max-md:pl-4 ">
                   <img src="/2.webp" alt="" />
                 </CarouselItem>
-                <CarouselItem className="max-md:pl-4 basis-1/3">
+                <CarouselItem className="max-md:pl-4">
                   <img src="/3.webp" alt="" />
                 </CarouselItem>
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-20  bg-[#d19f37] text-white">
+        <div className="flex flex-wrap justify-center gap-10">
+          <div className="space-y-2">
+            <h1 className="text-4xl font-Poppins font-semibold text-center">
+              Acesso Imediato a<br /> Tudo isso Hoje!
+            </h1>
+            <div className="font-Jost font-medium">
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                Estrutura de vendas profissional.
+              </span>
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                Facebook Ads Avançado.
+              </span>
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                As melhores estratégias orgânicas.
+              </span>{" "}
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                Criar Redes Sociais Engajadas.
+              </span>
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                Ganhe de R$500 a R$15mil por mês.
+              </span>
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                Suporte para Alunos.
+              </span>
+              <span className="flex items-center gap-2">
+                <AiTwotoneLike />
+                Google Ads Avançado.
+              </span>
+            </div>
+          </div>
+
+
+          <div className="flex flex-col justify-center items-center space-y-2" >
+            <span className="text-xl">DE <span className="text-red-900 font-bold line-through">R$ 459</span> POR </span>
+            <h2 className="text-8xl font-Poppins font-medium">R$ 297</h2>
+            <Button
+            className="font-Poppins bg-green2  text-white shadow-shapeGreen hover:text-black hover:bg-green-100 hover:shadow-shapeWhite text-2xl 
+          font-bold uppercase"
+          >
+            COMPRAR AGORA
+          </Button>
           </div>
         </div>
       </div>
