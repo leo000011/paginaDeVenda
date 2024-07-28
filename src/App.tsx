@@ -11,6 +11,12 @@ import {
   CarouselPrevious,
 } from "./components/ui/carousel";
 import { AiTwotoneLike } from "react-icons/ai";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./components/ui/accordion";
 
 function App() {
   return (
@@ -105,16 +111,16 @@ function App() {
           <h1 className="text-[#1fbd9a] text-4xl font-Poppins font-bold">
             Resultado
           </h1>
-          <div className="max-md:w-[400px]  px-10">
+          <div className="  px-10">
             <Carousel>
-              <CarouselContent className="-ml-4">
-                <CarouselItem className="max-md:pl-4 ">
+              <CarouselContent>
+                <CarouselItem className="md:basis-1/3  ">
                   <img src="/1.webp" alt="" />
                 </CarouselItem>
-                <CarouselItem className="max-md:pl-4 ">
+                <CarouselItem className="md:basis-1/3 ">
                   <img src="/2.webp" alt="" />
                 </CarouselItem>
-                <CarouselItem className="max-md:pl-4">
+                <CarouselItem className="md:basis-1/3">
                   <img src="/3.webp" alt="" />
                 </CarouselItem>
               </CarouselContent>
@@ -125,10 +131,10 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-20  bg-[#d19f37] text-white">
+      <div className="py-20 px-4 bg-[#d19f37] text-white">
         <div className="flex flex-wrap justify-center gap-10">
           <div className="space-y-2">
-            <h1 className="text-4xl font-Poppins font-semibold text-center">
+            <h1 className="text-3xl md:text-4xl font-Poppins font-semibold text-center">
               Acesso Imediato a<br /> Tudo isso Hoje!
             </h1>
             <div className="font-Jost font-medium">
@@ -163,16 +169,88 @@ function App() {
             </div>
           </div>
 
-
-          <div className="flex flex-col justify-center items-center space-y-2" >
-            <span className="text-xl">DE <span className="text-red-900 font-bold line-through">R$ 459</span> POR </span>
-            <h2 className="text-8xl font-Poppins font-medium">R$ 297</h2>
+          <div className="flex flex-col justify-center items-center space-y-2">
+            <span className="text-xl">
+              DE{" "}
+              <span className="text-red-600 font-Poppins font-bold line-through">
+                R$ 459
+              </span>{" "}
+              POR{" "}
+            </span>
+            <h2 className="text-8xl font-Poppins font-bold">R$ 297</h2>
             <Button
-            className="font-Poppins bg-green2  text-white shadow-shapeGreen hover:text-black hover:bg-green-100 hover:shadow-shapeWhite text-2xl 
+              className="font-Poppins bg-green2  text-white shadow-shapeGreen hover:text-black hover:bg-green-100 hover:shadow-shapeWhite text-2xl 
           font-bold uppercase"
-          >
-            COMPRAR AGORA
-          </Button>
+            >
+              COMPRAR AGORA
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      <div className=" bg-black text-white py-10 px-10">
+        <div className=" flex flex-wrap items-center justify-center  gap-6">
+          <h2 className="text-center text-4xl font-Poppins font-bold">Dúvidas Mais<br/> Frequentes</h2>
+          <div>
+          <Accordion className="w-[300px] md:w-[800px]" type="single" collapsible>
+            
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                Nunca vendi nada na internet, o curso é pra mim?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim! Esse curso serve tanto para iniciantes quanto para
+                intermediários. Eu vou te ensinar do zero até você fazer a
+                primeira venda de muitas.
+              </AccordionContent>{" "}
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                Posso aplicar o conteúdo somente com o meu celular?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim 100% do conteúdo você pode aplicar somente com seu celular
+                ou somente pelo o computador fica na sua disposição e escolha.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">  
+              <AccordionTrigger>Como vou acessar o curso?</AccordionTrigger>
+              <AccordionContent>
+                O curso é 100% online e você receberá o acesso por e-mail após a
+                confirmação da compra.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger>E se eu não gostar?</AccordionTrigger>
+              <AccordionContent>
+                Eu confio tanto no meu conteúdo que estou te dando 7 dias de
+                Garantia. Se por qualquer motivo você não gostar ou não se
+                adaptar, devolvemos seu dinheiro.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger>E se eu tiver dúvida?</AccordionTrigger>
+              <AccordionContent>
+                Temos um time de suporte sempre à disposição para sanar qualquer
+                dúvida em relação ao conteúdo do treinamento.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-6">
+              <AccordionTrigger>
+                Onde e como faço o Curso Renda Extra.
+              </AccordionTrigger>
+              <AccordionContent>
+                O curso é totalmente online, ou seja você pode assistir ele
+                quando quiser, a onde quiser, quantas vezes quiser, contanto que
+                tenha algum dispositivo conectado a internet.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
           </div>
         </div>
       </div>
