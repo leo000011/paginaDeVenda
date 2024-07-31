@@ -21,7 +21,7 @@ import {
 function App() {
   return (
     <>
-      <div className=" bg-[rgb(32,32,32)] text-white  flex justify-center">
+      <div className=" bg-[#100420] text-white  flex justify-center px-3">
         <div className=" space-y-5 max-md:space-y-3 text-center w-[1200px] px-4 py-4">
           <h1 className="text-5xl max-md:text-2xl font-Poppins font-bold  ">
             Descubra Como Garantir <br /> uma Renda Extra Diária
@@ -30,7 +30,9 @@ function App() {
             Domine a Arte de Vender Online Mesmo Sem Experiência!
           </h4>
 
-          <div className="h-[350px] mx-auto w-[600px] bg-gray-600 max-md:w-[300px] max-md:h-[150px]"></div>
+          <div className=" mx-auto ">
+            <img src="/Design.png" alt="" />
+          </div>
 
           <Button
             className="font-Poppins bg-green2  text-white shadow-shapeGreen hover:text-black hover:bg-green-100 hover:shadow-shapeWhite text-2xl max-md:text-xs 
