@@ -86,7 +86,7 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-[#d19f37] text-white p-10 text-center ">
+      <div className="bg-[#d19f37] text-white p-10 text-center py-10">
         <div className=" space-y-5">
           <h1 className="text-2xl md:text-3xl font-Poppins font-bold ">
             O QUE É O METODO RENDA EXTRA ?
@@ -108,7 +108,7 @@ function App() {
         </div>
       </div>
 
-      <div className="p-5 bg-white1 text-center  ">
+      <div className="p-5 bg-white1 text-center py-10 ">
         <div className="space-y-5 grid justify-center">
           <h1 className="text-[#1fbd9a] text-4xl font-Poppins font-bold">
             Resultado
