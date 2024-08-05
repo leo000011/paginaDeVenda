@@ -1,7 +1,6 @@
 // import { Button } from "./components/ui/button";
 
 import { FaRegCommentAlt, FaTelegram } from "react-icons/fa";
-import { Button } from "./components/ui/button";
 import { RiComputerLine } from "react-icons/ri";
 import {
   Carousel,
@@ -34,12 +33,12 @@ function App() {
             <img src="/Design.png" alt="" />
           </div>
 
-          <Button
+          <a href="#payment"
             className="font-Poppins bg-green2  text-white shadow-shapeGreen hover:text-black hover:bg-green-100 hover:shadow-shapeWhite text-2xl max-md:text-xs 
-          font-bold uppercase"
-          >
+          font-bold uppercase p-2 rounded-md" 
+>
             Quero Ganhar Renda Agora
-          </Button>
+          </a>
           <img src="/payments.webp" className="mx-auto" />
         </div>
       </div>
@@ -133,7 +132,7 @@ function App() {
         </div>
       </div>
 
-      <div className="py-20 px-4 bg-[#d19f37] text-white">
+      <div id="payment" className="py-20 px-4 bg-[#d19f37] text-white">
         <div className="flex flex-wrap justify-center gap-10">
           <div className="space-y-2">
             <h1 className="text-3xl md:text-4xl font-Poppins font-semibold text-center">
@@ -180,12 +179,13 @@ function App() {
               POR{" "}
             </span>
             <h2 className="text-8xl font-Poppins font-bold">R$ 297</h2>
-            <Button
+            <a href="https://go.hotmart.com/Y94569545V?ap=f32f"
               className="font-Poppins bg-green2  text-white shadow-shapeGreen hover:text-black hover:bg-green-100 hover:shadow-shapeWhite text-2xl 
-          font-bold uppercase"
+          font-bold uppercase p-2 rounded-md"
+          
             >
               COMPRAR AGORA
-            </Button>
+            </a>
           </div>
         </div>
       </div>
