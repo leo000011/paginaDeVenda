@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div className=" bg-[#100420] text-white  flex justify-center px-3">
-        <div className=" space-y-5 max-md:space-y-3 text-center w-[1200px] px-4 py-4">
+        <div className=" space-y-8 max-md:space-y-3 text-center w-[1200px] px-4 py-4">
           <h1 className="text-5xl max-md:text-2xl font-Poppins font-bold  ">
             Descubra Como Garantir <br /> uma Renda Extra Diária
           </h1>
@@ -29,8 +29,8 @@ function App() {
             Domine a Arte de Vender Online Mesmo Sem Experiência!
           </h4>
 
-          <div className=" mx-auto ">
-            <img src="/Design.png" alt="" />
+          <div className=" h-[200px] mx-auto flex items-center ">
+            <img src="/Design.png" className=" object-center  "/>
           </div>
 
           <a href="#payment"
